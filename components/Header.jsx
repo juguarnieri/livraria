@@ -1,22 +1,29 @@
 import styles from "../styles/Header.module.css";
+import NavBar from "./NavBar";
+import SearchBar from "./SearchBar";
+import Icons from "./Icons";
 
-export default function Header() {
-    return (
+const Header = () => {
+  return (
     <header className={styles.header}>
-        <div className={styles.title}>
-        <h1>
-        <span className={styles["text-green"]}>Entre</span>
-        <span className={styles["text-purple"]}>Linhas</span>
-        </h1>
-        <p>Onde histórias ganham vida</p>
-        </div>
-        <div className={styles.navbar}>
-        <a href="/">Início</a>
-        <a href="/livros">Livros</a>
-        <a href="/sobre">Sobre</a>
-        
-        </div>
+      <div className={styles.logo}>
+        <span className={styles.brand}>
+          Entre<span className={styles.highlight}>Linhas</span>
+        </span>
+        <p className={styles.subtitle}>
+          <span className={styles.line}></span>
+          Onde histórias ganham vida
+          <span className={styles.line}></span>
+        </p>
+      </div>
 
+      <NavBar />
+      <div className={styles.actions}>
+        <SearchBar />
+        <Icons />
+      </div>
     </header>
   );
-}
+};
+
+export default Header;

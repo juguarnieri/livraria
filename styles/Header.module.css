@@ -1,0 +1,29 @@
+.header {
+    height: 25%;
+    width: 25%;
+}
+
+.title {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.text-green  {
+    color: #97f7d3;
+    font-size: 1.8rem;
+    font-family: poppins;
+
+}
+
+.text-purple  {
+    color: #e96ee6;
+    font-size: 1.8rem;
+    font-family: poppins;
+}
+
+.navbar {
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    font-family: poppins;
+}

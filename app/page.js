@@ -46,7 +46,8 @@ export default function Home() {
           description="Promoção de lançamentos com até 30% de desconto!"
           buttonText="Ver ofertas"
         />
-         <WeeklyHighlights books={featuredBooks} />
+        <SectionHeader title="Destaques da Semana" linkText="Ver todos" />
+        <WeeklyHighlights books={featuredBooks} />
       </div>
   );
 }  

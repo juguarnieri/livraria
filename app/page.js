@@ -7,49 +7,55 @@ import "../app/home.css";
 
 const featuredBooks = [
   {
-    title: "O Algoritmo da Imaginação",
-    author: "Ana Luz Santos",
-    price: "R$ 49.90",
-    rating: 4.5,
-    tags: ["Ficção Científica", "Tecnologia"],
+    image: "/pequenoPrincipe.png",
+    title: "O Pequeno Príncipe",
+    author: "Antoine de Saint-Exupéry",
+    price: "R$ 29.90",
+    rating: 4.9,
+    tags: ["Clássico", "Fábula"],
     isNew: false,
   },
   {
-    title: "Conexões Invisíveis",
-    author: "Marcos Silva",
-    price: "R$ 39.90",
+    image: "/anneFrank.png",
+    title: "O Diário de Anne Frank",
+    author: "Anne Frank",
+    price: "R$ 34.90",
     rating: 4.8,
-    tags: ["Romance", "Tecnologia"],
+    tags: ["História", "Biografia"],
     isNew: false,
   },
   {
-    title: "Além do Código",
-    author: "Julia Mendes",
-    price: "R$ 55.90",
-    rating: 4.2,
-    tags: ["Biografia", "Programação"],
+    image: "/oGrandeDesafio.png",
+    title: "O Grande Desafio",
+    author: "Manoel Bandeira",
+    price: "R$ 27.90",
+    rating: 4.6,
+    tags: ["Poesia", "Literatura Brasileira"],
     isNew: false,
   },
   {
-    title: "Universos Paralelos",
-    author: "Lucas Costa",
-    price: "R$ 47.90",
+    image: "/oSignoDosQuatro.png",
+    title: "Sherlock Holmes: O Signo dos Quatro",
+    author: "Arthur Conan Doyle",
+    price: "R$ 39.90",
     rating: 4.7,
-    tags: ["Ficção Científica", "Filosofia"],
+    tags: ["Mistério", "Clássico"],
     isNew: false,
   },
 ];
 
 const newReleases = [
   {
+    image: "/misterioQuantico.png",
     title: "O Mistério Quântico",
     author: "Fernanda Oliveira",
     price: "R$ 59.90",
     rating: 4.9,
     tags: ["Física", "Mistério"],
-    isNew: true,
+    isNew: true, 
   },
   {
+    image: "/caminhosFuturos.png",
     title: "Caminhos do Futuro",
     author: "Rafael Torres",
     price: "R$ 45.90",
@@ -58,6 +64,7 @@ const newReleases = [
     isNew: true,
   },
   {
+    image: "/arteDaCriatividade.png",
     title: "A Arte da Criatividade",
     author: "Beatriz Ramos",
     price: "R$ 50.00",
@@ -77,11 +84,12 @@ const categories = [
   { name: "Autoajuda", icon: "🌱" },
   { name: "Mistério", icon: "🔍" },
 ];
+
 export default function Home() {
   return (
     <div>
       <Header />
-      <Poster
+      <Poster 
         title="Descubra mundos extraordinários"
         description="Promoção de lançamentos com até 30% de desconto!"
         buttonText="Ver ofertas"
@@ -91,12 +99,11 @@ export default function Home() {
       <SectionHeader title="Categorias Populares" linkText="Ver todos" />
       <PopularCategories categories={categories} />
       <SectionHeader title="Lançamentos" linkText="Ver todos" />
-      <WeeklyHighlights books={newReleases} />
+      <WeeklyHighlights books={newReleases} /> 
       <div className="newsletter">
         <h2 className="newsletter-title">Fique por dentro das novidades!</h2>
         <p className="newsletter-description">
-          Assine nossa newsletter e receba atualizações sobre novos lançamentos,
-          <br />
+          Assine nossa newsletter e receba atualizações sobre novos lançamentos,<br />
           promoções exclusivas e dicas de leitura.
         </p>
         <form className="newsletter-form">

@@ -112,3 +112,39 @@
     top: -10px;
     left: -5px;
 }
+
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 20px;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+    }
+
+    .nav a {
+        padding: 10px;
+        text-align: center;
+        display: block;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .actions {
+        gap: 10px;
+    }
+
+    .searchBar input {
+        width: 120px;
+    }
+}

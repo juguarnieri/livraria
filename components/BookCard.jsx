@@ -1,11 +1,11 @@
 import styles from "../styles/BookCard.module.css";
 
-export default function BookCard({ title, author, price, rating, tags, isNew }) {
+export default function BookCard({ image, title, author, price, rating, tags, isNew }) {
     return (
       <div className={styles.card}>
         {isNew && <span className={styles.newTag}>Novo</span>} 
 
-        <img src="/placeholder.jpg" alt={title} className={styles.image} />
+        <img src={image} alt={title} className={styles.image} />
         <h3 className={styles.title}>{title}</h3>
         <p className={styles.author}>por {author}</p>
         <div className={styles.rating}>⭐ {rating}</div>
@@ -23,4 +23,4 @@ export default function BookCard({ title, author, price, rating, tags, isNew }) 
         </div>
       </div>
     );
-  }
+}

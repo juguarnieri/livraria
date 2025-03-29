@@ -1,0 +1,25 @@
+/* FooterBottom */
+.footerBottom {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #d1d5db;
+    border-top: 1px solid #374151;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+
+.policies {
+    display: flex;
+    gap: 1rem;
+    color: #d1d5db;
+
+}
+
+.policies a {
+    margin: 0 10px;
+    font-size: 0.7rem;
+}

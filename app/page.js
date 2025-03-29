@@ -1,9 +1,8 @@
-import Header from "../components/Header";
-import Poster from "../components/Poster";
 import SectionHeader from "../components/SectionHeader";
 import WeeklyHighlights from "../components/WeeklyHighlights";
 import PopularCategories from "../components/PopularCategories";
 import "../app/home.css";
+import Footer from "../components/Footer"; 
 
 const featuredBooks = [
   {
@@ -116,6 +115,7 @@ export default function Home() {
             Assinar
           </button>
         </form>
+       <Footer /> 
       </div>
     </div>
   );

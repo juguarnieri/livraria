@@ -1,0 +1,31 @@
+/* FooterLogo */
+.logoSection {
+    max-width: 250px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.brand {
+    color: #20c997;
+}
+
+.highlight {
+    color: #a855f7;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.description {
+    font-size: 12px;
+    color: #d1d5db;
+    margin-top: 8px;
+}

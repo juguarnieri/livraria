@@ -1,17 +1,15 @@
 import React from 'react';
-import CategoryCard from './CategoryCard';
 import styles from '../styles/PopularCategories.module.css'; 
 
-const PopularCategories = ({ categories }) => { 
+export default function PopularCategories({ categories }) {
   return (
-    <section>
-      <div className={styles['category-list']}>  
-        {categories.map((cat, i) => (
-          <CategoryCard key={i} name={cat.name} icon={cat.icon} />
-        ))}
-      </div>
-    </section>
+    <div className={styles.categoriesContainer}>
+      {categories.map((category, index) => (
+        <div key={index} className={styles.categoryItem}>
+          <span className={styles.categoryIcon}>{category.icon}</span>
+          <p className={styles.categoryName}>{category.name}</p>
+        </div>
+      ))}
+    </div>
   );
-};
-
-export default PopularCategories;
+}

@@ -26,21 +26,21 @@ const featuredBooks = [
     isNew: false,
   },
   {
-    image: "/oGrandeDesafio.png",
-    title: "O Grande Desafio",
-    author: "Manoel Bandeira",
-    price: "R$ 27.90",
+    image: "/eAssimQueAcaba.png",
+    title: "É Assim Que Acaba",
+    author: "Colleen Hoover",
+    price: "R$ 49.90",
     rating: 4.6,
-    tags: ["Poesia", "Literatura Brasileira"],
+    tags: ["Romance", "Drama"],
     isNew: false,
   },
   {
-    image: "/oSignoDosQuatro.png",
-    title: "Sherlock Holmes: O Signo dos Quatro",
-    author: "Arthur Conan Doyle",
+    image: "/amorAzeitonas.png",
+    title: "Amor e Azeitonas",
+    author: "Mariana Enríquez",
     price: "R$ 39.90",
     rating: 4.7,
-    tags: ["Mistério", "Clássico"],
+    tags: ["Romance", "Comédia"],
     isNew: false,
   },
 ];
@@ -65,6 +65,15 @@ const newReleases = [
     isNew: true,
   },
   {
+    image: "/eAssimQueAcaba.png",
+    title: "A Arte da Criatividade",
+    author: "Beatriz Ramos",
+    price: "R$ 50.00",
+    rating: 4.7,
+    tags: ["Autoajuda", "Inovação"],
+    isNew: true,
+  },
+  {
     image: "/arteDaCriatividade.png",
     title: "A Arte da Criatividade",
     author: "Beatriz Ramos",
@@ -84,6 +93,8 @@ const categories = [
   { name: "História", icon: "📜" },
   { name: "Autoajuda", icon: "🌱" },
   { name: "Mistério", icon: "🔍" },
+  { name: "Religioso", icon: "🕍" },
+  { name: "Infantil", icon: "🧸🛴" },
 ];
 
 export default function Home() {

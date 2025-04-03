@@ -1,9 +1,18 @@
-import styles from "../styles/FooterLinksCategories.module.css";
+import styles from "../styles/FooterSection.module.css";
 
-const FooterLinksCategories = () => {
+const FooterSection = () => {
   return (
-    <div className={styles.linksCategoriesSection}>
-    
+      <div className={styles.linksCategoriesSection}>
+      <div className={styles.logoSection}>
+        <span className={styles.brand}>
+        Entre<span className={styles.highlight}>Linhas</span>
+      </span>
+      <p className={styles.subtitle}>Onde histórias ganham vida</p>
+      <p className={styles.description}>
+        A EntreLinhas é uma livraria online que conecta leitores ávidos com os melhores e mais diversos livros do mercado.
+      </p>
+      </div>
+
       <div className={styles.linksSection}>
         <h3 className={styles.sectionTitle}>Links Rápidos</h3>
         <ul className={styles.list}>
@@ -15,7 +24,6 @@ const FooterLinksCategories = () => {
         </ul>
       </div>
 
-   
       <div className={styles.categoriesSection}>
         <h3 className={styles.sectionTitle}>Categorias</h3>
         <ul className={styles.list}>
@@ -26,8 +34,20 @@ const FooterLinksCategories = () => {
           <li><a href="#" className={styles.link}>História</a></li>
         </ul>
       </div>
+
+      <div className={styles.socialSection}>
+        <h3 className={styles.sectionTitle}>Redes Sociais</h3>
+        <ul className={styles.list}>
+        <li>📷 <a href="#" className={styles.link}>Instagram</a></li>
+        <li>🎵 <a href="#" className={styles.link}>TikTok</a></li>
+        <li>🐦 <a href="#" className={styles.link}>Twitter</a></li>
+        <li>📺 <a href="#" className={styles.link}>YouTube</a></li>
+        </ul>
+    </div>
+  
+
     </div>
   );
 };
 
-export default FooterLinksCategories;
+export default FooterSection;

@@ -107,7 +107,6 @@
 
 
 
-/* Responsividade */
 @media (max-width: 768px) {
     .linksCategoriesSection {
         align-items: center;
@@ -119,4 +118,35 @@
         max-width: 100%;
         text-align: center;
     }
+}
+
+
+.iconInstagram {
+    color: #E1306C; 
+}
+
+.iconTiktok {
+    color: #000000; 
+}
+.iconTwitter {
+    color: #1DA1F2; 
+}
+.iconYoutube {
+    color: #FF0000; 
+}
+
+.socialSection li {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 0.4rem; 
+}
+
+.icon {
+    font-size: 1.5rem; 
+    margin-right: 8px; 
+    transition: transform 0.3s ease; 
+}
+
+.icon:hover {
+    transform: scale(1.2);
 }

@@ -8,6 +8,7 @@
     align-items: center;
     font-size: 22px;
     font-weight: bold;
+    
 }
 
 .brand {
@@ -33,7 +34,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 8rem;
+    gap: 8.2rem;
 }
 
 .linksSection, .categoriesSection {
@@ -99,23 +100,41 @@
 }
 
 .sectionTitle {
-    color: #a855f7;
+    color: #ff627f;
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-
-
-/* Responsividade */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .linksCategoriesSection {
-        flex-direction: column;
+        flex-direction: row; 
+        justify-content: center; 
         align-items: center;
+        gap: 4.4rem;
     }
 
-    .linksSection, .categoriesSection {
-        max-width: 100%;
-        text-align: center;
+    .linksSection, .categoriesSection, .socialSection {
+        max-width: 200px; 
+        text-align: center; 
+    }
+
+    .logoSection {
+        max-width: 200px; /* Ajustar largura da logo */
+    }
+}
+
+@media (max-width: 768px) {
+    .linksCategoriesSection {
+        flex-direction: column; /* Empilhar os itens verticalmente */
+        gap: 1.5rem; /* Reduzir o espaço entre os itens */
+    }
+
+    .linksSection, .categoriesSection, .socialSection {
+        max-width: 100%; /* Usar toda a largura disponível */
+    }
+
+    .logoSection {
+        max-width: 100%; /* Ajustar largura da logo */
     }
 }

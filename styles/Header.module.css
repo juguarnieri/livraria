@@ -148,3 +148,13 @@
         width: 120px;
     }
 }
+
+@media (max-width: 1024px) {
+    .logo {
+        font-size: 18px; 
+    }
+
+    .subtitle {
+        font-size: 12px; 
+    }
+}
